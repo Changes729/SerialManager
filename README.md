@@ -1,4 +1,4 @@
-# SerialManager
+# SerialScanner
 
 在 Windows 下，由于 Windows 串口分配机制，导致 Windows 串口会出现不断更换的情况。不论是生产环境、测试环境还是部署环境下，都非常麻烦。
 

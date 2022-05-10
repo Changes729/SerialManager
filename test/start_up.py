@@ -27,7 +27,7 @@ def get_state(serialFd, CMD):
             return serialFd.read(input_waiting_size).decode("UTF-8")
 
 def main():
-    serial_device_list = os.popen("python "+ CURR_DIR + "/../tools/find_serial_com.py --des Arduino").read().split(' ')
+    serial_device_list = os.popen("python "+ CURR_DIR + "/../find_serial_com.py --des Arduino").read().split(' ')
     if(serial_device_list is None or len(serial_device_list[0].strip()) == 0):
         print("Error has no projector")
         sys.exit(2)
